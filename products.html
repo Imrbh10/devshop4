@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Add Product</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  .form-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  h2 {
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  input, textarea, select {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+  }
+  button {
+    width: 100%;
+    padding: 0.8rem;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #1d4ed8;
+  }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Add Product</h2>
+  <form>
+    <label for="name">Product Name</label>
+    <input type="text" id="name" placeholder="Enter product name" required>
+
+    <label for="price">Price</label>
+    <input type="number" id="price" placeholder="Enter price" required>
+
+    <label for="category">Category</label>
+    <select id="category">
+      <option>Electronics</option>
+      <option>Clothing</option>
+      <option>Groceries</option>
+      <option>Other</option>
+    </select>
+
+    <label for="description">Description</label>
+    <textarea id="description" rows="3" placeholder="Enter description"></textarea>
+
+    <button type="submit">Add Product</button>
+  </form>
+</div>
+
+</body>
+</html>
