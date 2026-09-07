@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+  }
+  header {
+    background: #1f2937;
+    color: #fff;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 { font-size: 1.4rem; }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 0.95rem;
+  }
+  nav a:hover { text-decoration: underline; }
+  .about-hero {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #2563eb;
+    color: #fff;
+  }
+  .about-hero h2 { font-size: 2rem; }
+  main {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+  }
+  section {
+    margin-bottom: 2.5rem;
+  }
+  section h3 {
+    color: #2563eb;
+    margin-bottom: 0.6rem;
+  }
+  .team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .member {
+    background: #fff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+  .member .avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #2563eb;
+    margin: 0 auto 0.8rem;
+  }
+  .member h4 { margin-bottom: 0.2rem; }
+  .member p { font-size: 0.85rem; color: #666; }
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: #666;
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>MySite</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="about-hero">
+  <h2>About Us</h2>
+  <p>Learn more about who we are and what we do.</p>
+</section>
+
+<main>
+  <section>
+    <h3>Our Story</h3>
+    <p>We started with a simple idea: build things that are easy to use and genuinely helpful. Over time, that idea grew into a small team dedicated to creating quality work for our customers.</p>
+  </section>
+
+  <section>
+    <h3>Our Mission</h3>
+    <p>Our mission is to deliver simple, reliable solutions while keeping our customers' needs at the center of everything we do.</p>
+  </section>
+
+  <section>
+    <h3>Meet the Team</h3>
+    <div class="team">
+      <div class="member">
+        <div class="avatar"></div>
+        <h4>Jane Doe</h4>
+        <p>Founder</p>
+      </div>
+      <div class="member">
+        <div class="avatar"></div>
+        <h4>John Smith</h4>
+        <p>Designer</p>
+      </div>
+      <div class="member">
+        <div class="avatar"></div>
+        <h4>Emily Clark</h4>
+        <p>Developer</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2026 MySite. All rights reserved.
+</footer>
+
+</body>
+</html>
